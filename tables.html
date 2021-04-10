@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tables</title>
+</head>
+
+<body>
+  <header>
+    <h2 id="heading">Tables</h2>
+    <p>In HTML, the <code>&lt;table&gt;</code> element has content that is used to represent a two-dimensional table made of rows and columns.</p>
+    <p><strong>Format:</strong></p>
+    <pre><code>&lt;table&gt;
+ &lt;!-- rows and columns will go here --&gt;
+&lt;table&gt;</code></pre>
+  </header>
+
+  <nav>
+    <!-- Topic List -->
+    <p><strong> Types of Table Elements:</strong></p>
+    <ol>
+      <li><a href="#trow">Table Row Element</a></li>
+      <li><a href="#tdata">Table Data Element</a></li>
+      <li><a href="#thead">Table Head Element</a></li>
+      <li><a href="#tbody">Table Body Element</a></li>
+      <li><a href="#tfoot">Table Foot Element</a></li>
+      <li><a href="#theading">Table Heading Element</a></li>
+      <li><a href="">Table Row Element</a></li>
+    </ol>
+  </nav>
+
+  <hr>
+
+  <article>
+    <section>
+      <ol>
+        <li>
+          <h3 id="trow"><code>&lt;tr&gt;</code>Table Row Element</h3>
+          <!--Table Row Element List>-->
+          <p>The table row element, <code>&lt;tr&gt;</code>, is used to add rows to a table before adding table data and table headings.</p>
+          <pre><code>&lt;table&gt;
+ &lt;tr&gt;
+  .....
+ &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </li>
+
+        <li>
+          <h3 id="tdata"><code>&lt;td&gt;</code>Table Data Element</h3>
+          <!--Table Data Element List>-->
+          <p>The table data element, <code>&lt;td&gt;</code>, can be nested inside a table row element, <code>&lt;tr&gt;</code>, to add a cell of data to a table.</p>
+          <p><strong>Format:</strong></p>
+          <pre><code>                &lt;table&gt;
+        	 &lt;tr&gt;
+                   &lt;td&gt;cell one data&lt;/td&gt;
+                   &lt;td&gt;cell two data&lt;/td&gt;
+	         &lt;/tr&gt;
+	        &lt;/table&gt;</code></pre>
+        </li>
+
+        <li>
+          <h3 id="thead"><code>&lt;thead&gt;</code>Table Head Element</h3>
+          <!--Table Head Element List>-->
+          <p>The table head element, <code>&lt;thead&gt;</code>, defines the headings of table columns encapsulated in table rows.</p>
+          <p><strong>Format:</strong></p>
+          <pre><code>         &lt;thead&gt;
+           &lt;tr&gt;
+             &lt;th&gt;heading 1&lt;/th&gt;
+             &lt;th&gt;heading 2&lt;/th&gt;
+           &lt;/tr&gt;
+         &lt;/thead&gt;
+        </code>
+        </pre>
+        </li>
+
+        <li>
+          <h3 id="tbody"><code>&lt;tbody&gt;</code>Table Body Element</h3>
+          <!--Table Body Element List>-->
+          <p>The table body element, <code>&lt;tbody&gt;</code>, is a semantic element that will contain all table data other than table heading and table footer content. If used, <code>&lt;tbody&gt;</code> will contain all table row
+            <code>&lt;tr&gt;</code> elements, and indicates that <code>&lt;tr&gt;</code> elements make up the body of the table. <code>&lt;table&gt;</code> cannot have both <code>&lt;tbody&gt;</code> and <code>&lt;tr&gt;</code> as direct children.
+          </p>
+          <p><strong>Format:</strong></p>
+          <pre><code>          &lt;tbody&gt;
+            &lt;tr&gt;
+              &lt;td&gt;col 1&lt;/td&gt;
+              &lt;td&gt;col 2&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tbody&gt;
+          </code>
+            </pre>
+        </li>
+
+        <li>
+          <h3 id="tfoot"><code>&lt;tfoot&gt;</code>Table Foot Element</h3>
+          <!--Table Foot Element List>-->
+          <p>The table footer element, <code>&lt;tfoot&gt;</code>, uses table rows to give footer content or to summarize content at the end of a table.</p>
+          <p><strong>Format:</strong></p>
+          <pre><code>          &lt;tfoot&gt;
+            &lt;tr&gt;
+              &lt;td&gt;summary of col 1&lt;/td&gt;
+              &lt;td&gt;summary of col 2&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/tfoot&gt;
+          </code>
+            </pre>
+        </li>
+
+        <li>
+          <h3 id="theading"><code>&lt;th&gt;</code>Table Heading Element</h3>
+          <!--Table Heading Element List>-->
+          <p>The table heading element, <code>&lt;th&gt;</code>, is used to add titles to rows and columns of a table and must be enclosed in a table row element, <code>&lt;th&gt;</code>.</p>
+          <p><strong>Format:</strong></p>
+          <pre><code>          &lt;table&gt;
+            &lt;tr&gt;
+              &lt;th&gt;col 1&lt;/th&gt;
+              &lt;th&gt;col 2&lt;/th&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+              &lt;td&gt;col 1&lt;/td&gt;
+              &lt;td&gt;col 2&lt;/td&gt;
+            &lt;/tr&gt;
+          &lt;/table&gt;
+          </code>
+          </pre>
+        </li>
+
+      </ol>
+    </section>
+  </article>
+
+  <hr width="200">
+
+  <footer>
+    <pre align="center"><a href="#heading">Move to top</a>   <a href="index.html">Home</a> </pre>
+  </footer>
+
+</body>
+
+</html>

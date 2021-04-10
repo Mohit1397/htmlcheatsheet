@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML CheetSheet</title>
+  </head>
+  <body>
+    <header>
+		<!-- Topic List -->
+		<h1 id="title">HTML CheatSheet</h1>
+		<p>HTML stands for Hyper Text Markup Language. It is the standard markup language for creating web pages. It is used alongside technologies like Cascading Style Sheets (CSS) and JavaScript in modern web development.</p>
+		<p><b>We’ll go over:</b></p>
+		<nav>
+			<ul>
+				<li><a href="#basic" />Basic composition of an HTML webpage</li>
+				<li><a href="#HTMLelements" />Common HTML elements</li>
+				<li><a href="#textformat" />Text Formatting</li>
+				<li><a href="#links" />Links</li>
+				<li><a href="#media" />Media Elements</li>
+				<li><a href="#lists" />Lists</li>
+				<li><a href="#tables">Tables</a></li>
+				<li><a href="#forms" />Forms</li>
+				<li><a href="#semantic">Semantic HTML</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<hr>
+
+	<article>
+
+		<section>
+			<!-- Basic Composition of an HTML Webpage-->
+			<h2 id="basic"><u>Basic Composition of an HTML Webpage</u></h2>
+			<p>HTML code describes the <strong>structure of a web page</strong>. It consists of a series of elements that are defined by a start tag, the content, and a closing tag.</p>
+			<p>Empty elements do not need opening and closing tags, as there is no content to go in between them.</p>
+			<p>HTML elements can be classified into <strong>Block-level</strong> and <strong>Inline-level</strong> elements.</p>
+			<ul>
+				<li><strong>Block-level</strong> elements cause a line break to occur, and they take up space and stack down the page.</li>
+				<li><strong>Inline-level</strong> elements, however, only take up space as is necessary.</li>
+			</ul>
+			<p>
+				The <mark><code>&lt;!DOCTYPE html&gt;</code></mark> declaration defines that this document is an HTML5 document. The <code>&lt;html&gt</code> tag is the root of a HTML document and it should be added after !DOCTYPE declaration.
+			</p>
+			<p>It consists of two main elements: the <code>&lt;head&gt;</code> and the <code>&lt;body&gt;</code> elements.
+			</p>
+		</section>
+
+    <hr>
+
+		<section>
+			<!-- Common HTML elements-->
+			<h2 id="HTMLelements"><u>Common HTML elements</u></h2>
+			<ol>
+				<li>
+					<h3>Headings</h3>
+					<p>The heading tags represent all levels of headings in HTML. It has six levels, <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code>, with <code>&lt;h1&gt;</code> denoting the most important with the largest font size and weight.</p>
+					<ul>
+						<li>
+							<h1>This is heading <code>&lt;h1&gt;</code></h1>
+						</li>
+						<li>
+							<h2>This is heading <code>&lt;h2&gt;</code></h2>
+						</li>
+						<li>
+							<h3>This is heading <code>&lt;h3&gt;</code></h3>
+						</li>
+						<li>
+							<h4>This is heading <code>&lt;h4&gt;</code></h4>
+						</li>
+						<li>
+							<h5>This is heading <code>&lt;h5&gt;</code></h5>
+						</li>
+						<li>
+							<h6>This is heading <code>&lt;h6&gt;</code></h6>
+						</li>
+					</ul>
+					<p><strong>Pro Tip:</strong> It is best to use <code>&lt;h1&gt;</code> tag per web page.</p>
+				</li>
+
+				<li>
+					<h3>Paragraphs</h3>
+					<p>The <code>&lt;p&gt;</code> tag creates a paragraph. Line breaks and whitespaces are usually ignored when paragraphs are rendered in a browser.</p>
+				</li>
+
+				<li>
+					<h3>Content Division Element</h3>
+					<p>The <code>&lt;div&gt;</code> tag represents a division or section in an HTML document, it serves as a container that can be used to group content so they can be easily styled.</p>
+					<p>This styling can be done inline or by using CSS referencing their class or id attributes.</p>
+				</li>
+
+				<li>
+					<h3>Line Breaks</h3>
+					<p>The <code>&lt;br&gt;</code> tag is a good example of an empty element, it is used to enforce a line break within a <code>&lt;p&gt;</code> tag. It can be written as a self-closing tag <code>&lt;br /&gt;</code> or just the opening tag <code>&lt;br&gt;</code>.</p>
+				</li>
+			</ol>
+		</section>
+
+    <hr>
+
+		<section>
+			<!-- Text Formatting-->
+			<h2 id="textformat"><u>Text Formatting</u></h2>
+			<p>All HTML elements for formatting texts are an inline-level element. Some tags used in formatting text in HTML include the following.</p>
+
+			<ol>
+
+				<li>
+					<h3>Strong text</h3>
+					<pre><strong>Code:</strong> <code>&lt;strong&gt;This text is bold and important.&lt;/strong&gt;</code></pre>
+					<blockquote>
+						<p><strong>This text is bold and important.</strong></p>
+					</blockquote>
+					<p>Note that you can also use a <strong><code>&lt;b&gt;</code></strong> tag here.</p>
+				</li>
+
+				<li>
+					<h3>Emphasized Text</h3>
+					<pre><strong>Code:</strong> <code>&lt;em&gt;This text is italicized for emphasis.&lt;/em&gt;</code></pre>
+					<blockquote>
+						<p><em>This text is italicized for emphasis.</em></p>
+					</blockquote>
+					<p>You can also use a <strong><code>&lt;i&gt;</code></strong> tag here.</p>
+				</li>
+
+				<li>
+					<h3>Small Text</h3>
+					<pre><strong>Code:</strong> <code>&lt;small&gt;These words are smaller &lt;/small&gt; than others.</code></pre>
+					<blockquote>
+						<p><small>These words are smaller</small> than others.</p>
+					</blockquote>
+				</li>
+
+				<li>
+					<h3>Large Text</h3>
+					<pre><strong>Code:</strong><code>&lt;big&gt; These words are larger than &lt;/big&gt; the others.</code></pre>
+					<blockquote>
+						<p><big> These words are larger than </big> the others.</p>
+					</blockquote>
+				</li>
+
+				<li>
+					<h3>Highlighted Text</h3>
+					<pre><strong>Code:</strong><code>&lt;mark&gt; This text is highlighted.&lt;/mark&gt;</code></pre>
+					<blockquote>
+						<p><mark> This text is highlighted.</mark></p>
+					</blockquote>
+				</li>
+
+				<li>
+					<h3>Strikethrough Text</h3>
+					<pre><strong>Code:</strong><code>&lt;strike&gt;This is an example of strikethrough text&lt;/strike&gt;</code></pre>
+					<blockquote>
+						<p><strike>This is an example of strikethrough text</strike></p>
+					</blockquote>
+				</li>
+
+				<li>
+					<h3>Underlined Text</h3>
+					<pre><strong>Code:</strong><code>&lt;u&gt;This sentence is underlined.&lt;/u&gt;</code></pre>
+					<blockquote>
+						<p><u>This sentence is underlined.</u></p>
+					</blockquote>
+				</li>
+
+				<li>
+					<h3>Superscript and Subscript Text</h3>
+					<p><strong>Superscipt:</strong>An equation with superscript text: <code>&lt;sup&gt;2&lt;/sup&gt;.</code></p>
+					<blockquote>
+						<p>An equation with superscript text: X<sup>2</sup>.</p>
+					</blockquote>
+					<p><strong>Subscript:</strong>We can also denote a chemical compound using the subscript tag:</p>
+					<pre><strong>Code:</strong><code>CO&lt;sub&gt;2&lt;/sub&gt;</code></pre>
+					<blockquote>
+						<p>CO<sub>2</sub></p>
+					</blockquote>
+				</li>
+			</ol>
+		</section>
+
+    <hr>
+
+		<section>
+			<!-- Links Section-->
+			<h2 id="links"><u>Links</u></h2>
+			<p>The HTML <code>&lt;a&gt;</code> tag defines a hyperlink for navigation. It is an inline-level element. The <code>href</code> attribute holds the URL that will be navigated to.</p>
+			<pre><code>This is &lt;a href=&quot;url&quot;&gt;a link&lt;/a&gt;</code></pre>
+
+			<h3>Link Targets</h3>
+			<p>The target attribute is used to specify the location document/URL would be displayed. Some of the possible options are:</p>
+			<ul>
+				<li>
+					<p><strong><code>_blank:</code></strong>opens the linked document in a new browser window or tab</p>
+					<pre><code class="language-html">&lt;a href=&quot;cheatsheet.html&quot; target=&quot;_blank&quot;&gt;link &lt;/a&gt;</code></pre>
+				</li>
+				<li>
+					<p><strong><code>_self:</code></strong>opens the link in the same frame</p>
+					<pre><code>&lt;a href=&quot;cheatsheet.html&quot; target=&quot;_self&quot;&gt;link &lt;/a&gt;</code></pre>
+				</li>
+				<li>
+					<p><strong><code>_parent:</code></strong> opens the linked document in the parent frame</p>
+					<pre><code>&lt;a href=&quot;cheatsheet.html&quot; target=&quot;_parent&quot;&gt;link &lt;/a&gt;</code></pre>
+				</li>
+				<li>
+					<p><strong><code>_top:</code></strong> opens the document in the full body of the window</p>
+					<pre><code>&lt;a href=&quot;cheatsheet.html&quot; target=&quot;_top&quot;&gt;link &lt;/a&gt;</code></pre>
+				</li>
+			</ul>
+
+			<h3>Special Links</h3>
+			<pre><code>&lt;a href=&quot;mailto:email@example.com&quot;&gt;Send email&lt;/a&gt;
+
+&lt;a href=&quot;tel:0123492&quot;&gt;Call 0123492&lt;/a&gt;
+</code></pre>
+		</section>
+
+    <hr>
+
+		<section>
+			<!--Media Elements Section-->
+			<h2 id="media"><u>Media Elements</u></h2>
+			<p>You can add media elements to HTML, such as images, videos, and audio. Here’s how it’s done.</p>
+			<ol>
+				<li>
+					<h3>Video</h3>
+					<p>Below, we add a video and its size to our web page. You can provide multiple sources and formats. The browser uses the first available one.</p>
+					<code>
+						<pre>&lt;video width=&quot;300&quot; height=&quot;240&quot; controls&gt;
+&lt;source src=&quot;url&quot; type=&quot;video/mp4&quot;&gt;
+&lt;source src=&quot;alternate-url&quot; type=&quot;video/ogg&quot;&gt;
+&lt;/video&gt;</pre>
+					</code>
+				</li>
+				<li>
+					<h3>Audio</h3>
+					<code>
+						<pre>&lt;audio controls&gt;
+&lt;source srce=&quot;url&quot; type=&quot;audio/ogg&quot;&gt;
+&lt;source srce=&quot;alternate-url&quot; type=&quot;audio/mpeg&quot;&gt;
+&lt;/audio&gt;</pre>
+					</code>
+				</li>
+				<li>
+					<h3>Image</h3>
+					<code>
+						<pre>&lt;img src=&quot;path-to-image&quot; alt=&quot;alternate-text&quot; width=&quot;480px&quot; height=&quot;360px&quot;&gt;</pre>
+					</code>
+				</li>
+			</ol>
+		</section>
+
+    <hr>
+
+		<section>
+			<!-- List Element Section-->
+			<h2 id="lists"><u>Lists</u></h2>
+			<p>There are several kinds of lists we can create with HTML.</p>
+			<ol>
+				<li>
+					<h3>Ordered List</h3>
+					<p><code>&lt;ol&gt;</code> defines an ordered list. It is <strong>numbered by default</strong>. The numbering format can be changed using the type attribute.</p>
+					<pre><code>&lt;ol&gt;
+  &lt;li&gt;Water &lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;ol&gt;</code></pre>
+					<strong>Result:</strong>
+					<blockquote>
+						<ol>
+							<li>Water </li>
+							<li>Tea</li>
+							<li>Milk</li>
+						</ol>
+					</blockquote>
+				</li>
+
+				<li>
+					<h3>Unordered List</h3>
+					<p><code>&lt;ul&gt;</code> defines an unordered list. List items would appear bulleted.</p>
+					<pre><code>&lt;ul&gt;
+  &lt;li&gt;Rice&lt;/li&gt;
+  &lt;li&gt;Vegetables&lt;/li&gt;
+  &lt;li&gt;Butter&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+					<strong>Result:</strong>
+					<blockquote>
+						<ul>
+							<li>Rice</li>
+							<li>Vegetables</li>
+							<li>Butter</li>
+						</ul>
+					</blockquote>
+				</li>
+			</ol>
+		</section>
+
+    <hr>
+
+    <section>
+      <!-- Table Section-->
+      <h2 id="tables"><u>Tables</u></h2>
+      <p>In HTML, the <code>&lt;table&gt;</code> element are very commonly used in HTML to organize text and numbers.</p>
+      <p><strong>Format:</strong></p>
+      <pre><code>&lt;table&gt;
+   &lt;!-- rows and columns will go here --&gt;
+&lt;table&gt;</code></pre>
+
+      <p><strong>Let’s learn how to create tables <a href="tables.html"> here</a>.</strong></p>
+    </section>
+
+    <hr>
+
+    <section>
+      <!-- Form Section-->
+      <h2 id="forms"><u>Forms</u></h2>
+      <p>The HTML <code>&lt;form&gt;</code> element is used to collect and send information to an external source.</p>
+      <p><code>&lt;form&gt;</code> can contain various input elements. When a user submits the form, information in these input elements is passed to the source which is named in the <code>action</code> attribute of the form.</p>
+      <p><strong>Let’s learn more about forms <a href="forms.html"> here</a>.</strong></p>
+    </section>
+
+<hr>
+
+    <section>
+      <!-- Semantic HTML Section-->
+        <h2 id="semantic"><u>Semantic HTML</u></h2>
+        <p>Semantic HTML introduces meaning to the code we write. Before Semantic HTML the elements didn’t have any meaning as to what it does or what content goes in it.</p>
+        <p>An element such as <code>&lt;div&gt;</code> was used as a general-purpose element to create things from headers to footers to articles. With Semantic HTML we were introduced to elements that tell developers and browsers exactly what it does and what content should go in it.</p>
+        <p><strong>Let’s learn how to Semantic HTML <a href="semantic.html"> here</a>.</strong></p>
+    </section>
+
+    <hr width="200">
+
+  <footer>
+    <p align="center"><a href="#title">Move to top</a></p>
+  </footer>
+
+  <hr >
+
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Forms</title>
+</head>
+
+<body>
+  <header>
+    <h2 id="heading">Forms</h2>
+    <p>The <code>&lt;form&gt;</code> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.</p>
+  </header>
+
+  <nav>
+    <p><strong> Types of Form Elements:</strong></p>
+    <ol>
+      <li><a href="#label"><code>&lt;label&gt;</code> Element</a></li>
+      <li><a href="#input"><code>&lt;input&gt;</code> Element</a></li>
+      <li><a href="#textarea"><code>&lt;textarea&gt;</code> Element</a></li>
+      <li><a href="#select"><code>&lt;select&gt;</code> Element</a></li>
+      <li><a href="#datalist"><code>&lt;textarea&gt;</code> Element</a></li>
+    </ol>
+  </nav>
+
+  <hr>
+
+  <article>
+
+    <section>
+      <!-- Label Element Attribute Section-->
+      <h3 id="label"><code>&lt;label&gt;</code> Element</h3>
+      <p>The HTML <code>&lt;label&gt;</code> element provides identification for a specific <code>&lt;input&gt;</code> based on matching values of the <code>&lt;input&gt;</code>‘s id attribute and the <code>&lt;label&gt;</code>‘s for attribute. By
+        default, clicking on the <code>&lt;label&gt;</code> will focus the field of the related <code>&lt;input&gt;</code>.</p>
+      <p><strong>Format:</strong></p>
+      <pre><code>&lt;label for=&quot;password &quot;&gt;Password:&lt;/label&gt;
+&lt;input type=&quot;password&quot; name=&quot;password&quot; /&gt;
+      </code>
+      </pre>
+    </section>
+
+    <hr>
+
+    <section>
+      <!-- Input Element Attribute Section-->
+      <h3 id="input"><code>&lt;input&gt;</code> Element</h3>
+      <p>The HTML<code>&lt;input&gt;</code> element is the most used form element.</p>
+      <p>An <code>&lt;input&gt;</code> element can be displayed in many ways, depending on the <code>type</code>
+        attribute.</p>
+      <p>Here are some examples:</p>
+      <table>
+        <tr>
+          <th>Type</th>
+          <th></th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td><code>&lt;input type=&quot;text&quot;&gt;</code></td>
+          <td>-</td>
+          <td>Displays a single-line text input field</td>
+        </tr>
+        <tr>
+          <td><code>&lt;input type=&quot;radio&quot;&gt;</code></td>
+          <td>-</td>
+          <td>Displays a radio button (for selecting one of many choices)</td>
+        </tr>
+        <tr>
+          <td><code>&lt;input type=&quot;checkbox&quot;&gt;</code></td>
+          <td>-</td>
+          <td>Displays a checkbox (for selecting zero or more of many choices)</td>
+        </tr>
+        <tr>
+          <td><code>&lt;input type=&quot;submit&quot;&gt;</code></td>
+          <td>-</td>
+          <td>Displays a submit button (for submitting the form)</td>
+        </tr>
+        <tr>
+          <td><code>&lt;input type=&quot;button&quot;&gt;</code></td>
+          <td>-</td>
+          <td>Displays a clickable button</td>
+        </tr>
+        <tr>
+          <td><code>&lt;input type=&quot;password&quot;&gt;</code></td>
+          <td>-</td>
+          <td>Displays a password field</td>
+        </tr>
+      </table>
+    </section>
+
+    <hr>
+
+    <section>
+      <!-- Textarea Element Attribute Section-->
+      <h3 id="textarea"><code>&lt;textarea&gt;</code> Element</h3>
+      <p>The <code>&lt;textarea&gt;</code> element is used when creating a text-box for multi-line input (e.g. a comment section). The element supports the <code>rows</code> and <code>cols</code> attributes which determine the height and width,
+        respectively, of the element.</p>
+      <p><strong>Format:</strong></p>
+      <code>
+        &lt;textarea rows=&quot;10&quot; cols=&quot;30&quot; name=&quot;comment&quot;&gt;&lt;/textarea&gt;
+      </code>
+    </section>
+
+    <hr>
+
+    <section>
+      <!-- Select Element Attribute Section-->
+      <h3 id="select"><code>&lt;select&gt;</code> Element</h3>
+      <p>The HTML <code>&lt;select&gt;</code> element can be used to create a dropdown list. A list of choices for the dropdown list can be created using one or more <code>&lt;option&gt;</code> elements. By default, only one
+        <code>&lt;option&gt;</code> can be selected at a time.</p>
+      <p><strong>Format:</strong></p>
+      <pre><code>&lt;select name=&quot;rental-option&quot;&gt;
+  &lt;option value=&quot;small&quot;&gt;Small&lt;/option&gt;
+  &lt;option value=&quot;family&quot;&gt;Family Sedan&lt;/option&gt;
+  &lt;option value=&quot;lux&quot;&gt;Luxury&lt;/option&gt;
+&lt;/select&gt;
+      </code></pre>
+    </section>
+
+    <hr>
+
+    <section>
+      <!-- Select Element Attribute Section-->
+      <h3 id="datalist"><code>&lt;datalist&gt;</code> Element</h3>
+      <p>When using an HTML input, a basic search/autocomplete functionality can be achieved by pairing an <code>&lt;input&gt;</code> with a <code>&lt;datalist&gt;</code>. To pair a <code>&lt;input&gt;</code> with a <code>&lt;datalist&gt;</code> the <code>&lt;input&gt;</code>’s list value must match the value of the id of the <code>&lt;datalist&gt;</code>. The
+              datalist element is used to store a list of <code>&lt;option&gt;</code>s.</p>
+      <p><strong>Format:</strong></p>
+      <pre><code>&lt;input list=&quot;ide&quot;&gt;
+&lt;datalist id=&quot;ide&quot;&gt;
+  &lt;option value=&quot;Visual Studio Code&quot; /&gt;
+  &lt;option value=&quot;Atom&quot; /&gt;
+  &lt;option value=&quot;Sublime Text&quot; /&gt;
+&lt;/datalist&gt;
+      </code>
+      </pre>
+    </section>
+
+  </article>
+
+  <hr width="200">
+
+<footer>
+  <pre align="center"><a href="#heading">Move to top</a>   <a href="index.html">Home</a> </pre>
+</footer>
+</body>
+
+</html>
